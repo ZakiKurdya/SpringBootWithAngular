@@ -1,0 +1,17 @@
+server:
+    port: 7856 #Can be changed
+
+spring:
+    application:
+        name: SpringBootWithAngular
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/springbootwithangular?serverTimezone=UTC #Can be changed
+        username: zaki #Can be changed
+        password: MPrsh0RXidb!l-F! #Can be changed
+    jpa:
+        hibernate:
+            ddl-auto: update
+    sql:
+        init:
+            mode: always

@@ -1,0 +1,55 @@
+*{
+  font-family: Roboto, serif;
+}
+
+h1,h3{
+  text-align: center;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+#green{
+  color: green;
+}
+
+#red{
+  color: firebrick;
+}
+
+.students{
+  text-align: center;
+  margin: auto;
+  border: 1px solid darkcyan;
+  background-color: #eeeeee;
+  font-size: 14pt;
+}
+
+td, tr, th{
+  border: 1px solid darkcyan;
+  padding: 10px;
+}
+
+th{
+  color: darkcyan;
+}
+
+legend{
+  text-align: center;
+}
+
+input{
+  margin: 10px;
+  text-align: center;
+}
+
+input[type = "submit"]{
+  background-color: darkcyan;
+  color: white;
+  border: solid;
+  padding: 10px;
+  border-radius: 50px;
+  width: 100px;
+  cursor: pointer;
+}

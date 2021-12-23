@@ -1,0 +1,35 @@
+<h1><span id="green">Spring Boot</span> with <span id="red">Angular</span></h1>
+<h3>By: Zaki Kurdya</h3>
+<hr>
+<ul><li><h2>Retrieve/Select students data from MySQL database using spring boot:</h2></li></ul>
+<br>
+
+<table class="students">
+  <thead>
+  <tr>
+    <th *ngFor="let parameter of parameters" scope="col">{{parameter}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let student of students">
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.major}}</td>
+    <td>{{student.grade}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+<ul><li><h2>Add a new student to MySQL database using spring boot:</h2></li></ul>
+
+<form (ngSubmit)="onSubmit()">
+  <fieldset>
+    <legend>Add Student</legend>
+    <input type="number" name="id" placeholder="ID" id="id">
+    <input type="text" name="name" placeholder="Name" id="name">
+    <input type="text" name="major" placeholder="Major" id="major">
+    <input type="number" name="grade" placeholder="Grade" id="grade">
+    <input type="submit" id="submit">
+  </fieldset>
+</form>
